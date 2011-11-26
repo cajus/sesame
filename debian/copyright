@@ -1,0 +1,20 @@
+This package was debianized by Cajus Pollmeier <cajus@debian.org> on
+Sat, 16 Jan 2010 14:22:29 +0100.
+
+It was downloaded from http://qpidcomponents.org
+
+Upstream Author:
+
+    QPID development team <dev@qpid.apache.org>
+
+Copyright:
+
+    Copyright (C) 2007, 2008, 2009 Red Hat, Inc.
+
+License:
+
+    The component is licensed under GNU Lesser General Public
+    License (LGPL) version 2.1.
+    
+The Debian packaging is (C) 2011, Cajus Pollmeier <cajus@debian.org> and
+is licensed under the GPL, see `/usr/share/common-licenses/LGPL-2.1'.

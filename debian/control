@@ -1,0 +1,15 @@
+Source: sesame
+Section: misc
+Priority: extra
+Maintainer: Cajus Pollmeier <cajus@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, autoconf (>= 2.61), automake (>= 1.9.6), libtool (>= 1.5.22), libqpidtypes1-dev (>= 0.12), libqpidcommon2-dev (>= 0.12), libqmf2-dev (>=0.12), libqpidbroker2-dev (>=0.12)
+Standards-Version: 3.9.2
+Homepage: http://qpidcomponents.org
+
+Package: sesame
+Architecture: any
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Suggests: qpidd (>= 0.12)
+Provides: ${python:Provides}
+Description: QMF system monitoring facility
+ TBD
