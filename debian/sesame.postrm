@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "purge" ]; then
+  echo -n "Removing sesame configuration... "
+  rm -f /etc/sesame/sesame.conf 2>/dev/null || true
+  echo "done."
+fi
+
+#DEBHELPER#
+
+exit 0
