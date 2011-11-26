@@ -59,7 +59,7 @@ set -e
 case "$1" in
   start)
         echo -n "Starting $DESC: "
-        start-stop-daemon --start --quiet --pidfile /var/run/$NAME.pid \
+        start-stop-daemon --start --background --quiet --pidfile /var/run/$NAME.pid \
                 --exec $DAEMON --chuid $DAEMONUSER -- $DAEMON_OPTS
         echo "$NAME."
         ;;
@@ -81,7 +81,7 @@ case "$1" in
         start-stop-daemon --stop --oknodo --quiet --pidfile \
                 /var/run/$NAME.pid --exec $DAEMON
         sleep 1
-        start-stop-daemon --start --quiet --chuid $DAEMONUSER --pidfile \
+        start-stop-daemon --start --background --quiet --chuid $DAEMONUSER --pidfile \
                 /var/run/$NAME.pid --exec $DAEMON -- $DAEMON_OPTS
         echo "$NAME."
         ;;

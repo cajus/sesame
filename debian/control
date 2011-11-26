@@ -8,7 +8,7 @@ Homepage: http://qpidcomponents.org
 
 Package: sesame
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
 Suggests: qpidd (>= 0.12)
 Description: QMF system monitoring facility
  TBD
