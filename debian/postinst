@@ -13,9 +13,6 @@ case "$1" in
             echo 'Adding system-user for sesame' 1>&2
             adduser --system --home /var/run/sesame --group --no-create-home --disabled-password sesame
         fi
-
-        # Create directories
-        install -d -osesame -gsesame -m750 /var/lock/sesame 2> /dev/null || true
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

@@ -1,0 +1,11 @@
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -7,7 +7,7 @@
+ 
+ include qmfgen/qmfgen.mk
+ 
+-bin_PROGRAMS = sesame
++sbin_PROGRAMS = sesame
+ nodist_sesame_SOURCES = $(qmfgen_sources)
+ sesame_SOURCES = SysAgent.cpp
+ 
