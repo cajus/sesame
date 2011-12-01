@@ -54,6 +54,12 @@ if [ -n "$DAEMONUSER" ] ; then
     fi
 fi
 
+# Create state dir
+if [ ! -d /var/lib/sesame ]; then
+	mkdir -p /var/lib/sesame
+	chown $DAEMONUSER:$DAEMONUSER /var/lib/sesame
+fi
+
 set -e
 
 case "$1" in
